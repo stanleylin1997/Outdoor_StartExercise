@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ImageButton
+        android:id="@+id/ButtonBad"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_below="@+id/textView3"
+        android:layout_marginEnd="23dp"
+        android:layout_toStartOf="@+id/ButtonExer"
+        android:background="@drawable/shape"
+        android:elevation="4dp"
+        android:padding="8dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/badminton" />
+
+    <ImageButton
+        android:id="@+id/ButtonBase"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_above="@+id/ButtonPing"
+        android:layout_alignStart="@+id/ButtonPing"
+        android:layout_marginBottom="27dp"
+        android:background="@drawable/shape"
+        android:elevation="4dp"
+        android:padding="8dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/baseball" />
+
+    <ImageButton
+        android:id="@+id/ButtonBasket"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:padding="8dp"
+
+        android:layout_alignTop="@+id/ButtonBase"
+        android:layout_marginStart="26dp"
+        android:layout_toEndOf="@+id/ButtonBase"
+        android:background="@drawable/shape"
+        android:elevation="4dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/basketball" />
+
+    <ImageButton
+        android:id="@+id/ButtonJog"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:padding="8dp"
+
+        android:layout_alignStart="@+id/ButtonBad"
+        android:layout_alignTop="@+id/ButtonPing"
+        android:background="@drawable/shape"
+        android:elevation="4dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/jogging" />
+
+    <ImageButton
+        android:id="@+id/ButtonTennis"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:padding="8dp"
+
+        android:layout_above="@+id/ButtonBasket"
+        android:layout_alignStart="@+id/ButtonBasket"
+        android:layout_marginBottom="22dp"
+        android:background="@drawable/shape"
+        android:elevation="4dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/tennis" />
+
+    <ImageButton
+        android:id="@+id/ButtonVolley"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_alignStart="@+id/ButtonJog"
+        android:layout_alignTop="@+id/ButtonBase"
+        android:background="@drawable/shape"
+        android:elevation="4dp"
+        android:padding="8dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/volleyball" />
+
+    <ImageButton
+        android:id="@+id/ButtonPing"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="65dp"
+        android:background="@drawable/shape"
+        android:elevation="4dp"
+        android:padding="8dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/pingpong" />
+
+    <ImageButton
+        android:id="@+id/ButtonExer"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+
+        android:padding="8dp"
+        android:layout_alignTop="@+id/ButtonTennis"
+        android:layout_toStartOf="@+id/ButtonBasket"
+        android:background="@drawable/shape"
+        android:elevation="4dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/exercise" />
+
+    <ImageButton
+        android:id="@+id/ButtonOther"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_alignStart="@+id/ButtonBasket"
+        android:layout_below="@+id/ButtonBase"
+        android:background="@drawable/shape"
+
+        android:elevation="4dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/other" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ButtonTennis"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:text="@string/Question"
+        android:textSize="18sp" />
+
+
+
+</RelativeLayout>

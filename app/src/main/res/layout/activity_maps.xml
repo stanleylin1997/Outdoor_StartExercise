@@ -1,0 +1,80 @@
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.stanley.newexercise.MapsActivity"
+    tools:layout="@layout/activity_maps" >
+
+    <fragment
+        android:id="@+id/map"
+        class="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        map:layout_constraintBottom_toBottomOf="parent"
+        map:layout_constraintHorizontal_bias="0.0"
+        map:layout_constraintLeft_toLeftOf="parent"
+        map:layout_constraintRight_toRightOf="parent"
+        map:layout_constraintTop_toTopOf="parent"
+        map:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/buttonStart"
+        android:layout_width="161dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/start"
+        android:textSize="24sp"
+        map:layout_constraintBottom_toBottomOf="parent"
+        map:layout_constraintLeft_toLeftOf="parent"
+        map:layout_constraintRight_toRightOf="@+id/map"
+        map:layout_constraintTop_toTopOf="parent"
+        map:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="25dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="80dp"
+        android:text="@string/place"
+        android:textSize="20sp"
+        map:layout_constraintBottom_toTopOf="@+id/buttonStart"
+        map:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/showplace"
+        android:layout_width="129dp"
+        android:layout_height="25dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="8dp"
+        android:textSize="20sp"
+        map:layout_constraintBottom_toTopOf="@+id/buttonStart"
+        map:layout_constraintHorizontal_bias="0.0"
+        map:layout_constraintLeft_toRightOf="@+id/textView"
+        map:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="28dp"
+        android:layout_marginBottom="32dp"
+        android:layout_marginStart="80dp"
+        android:text="@string/chosseplace"
+        android:textSize="20sp"
+        map:layout_constraintBottom_toTopOf="@+id/buttonStart"
+        map:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/showsport"
+        android:layout_width="131dp"
+        android:layout_height="29dp"
+        android:textSize="20sp"
+        map:layout_constraintBottom_toTopOf="@+id/showplace"
+        map:layout_constraintStart_toEndOf="@+id/textView2" />
+
+</android.support.constraint.ConstraintLayout>
